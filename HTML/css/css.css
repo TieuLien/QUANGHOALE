@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Roboto-Bold';
+	src: url('../fonts/Roboto-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	background: #FAFAFA;
+	margin: 0 auto;
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	line-height: 150%;
+}
+.m-t-b-24{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.m-r-24{
+	margin-right: 24px;
+}
+.pink{
+	color: #FB0179;
+}
+.black{
+	color: #262626;
+}
+.btn{
+	font-family: 'Roboto-Medium';
+	border: 1px solid rgba(60, 60, 67, 0.3);
+	box-sizing: border-box;
+	padding: 10px 30px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* CSS Header */
+.navbar-vn{
+	height: 56px;
+	background: #FFFFFF;
+	box-shadow: 0px 0.33px 0px rgba(60, 60, 67, 0.3);
+}
+.logo{
+	width: 102px;
+	height: auto;
+}
+.store-list{
+	background: #FFFFFF;
+	border: 0.5px solid rgba(60, 60, 67, 0.3);
+	box-sizing: border-box;
+	border-radius: 3px;
+	height: 40px;
+    position: relative;
+	margin-top: 24px;
+}
+.nav-btn {
+	position:absolute;
+	right: 15px;
+	top: 8px;
+}
+.store-list ul{
+    height: 40px;
+    line-height: 40px;
+	overflow: hidden;
+}
+.store-list ul li{
+	display: inline-block;
+	margin-right: 10px;
+	overflow: hidden;
+	width: 60px;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+	color: #262626;
+}
+.readmore-tx{
+	line-height: 40px;
+	margin-top: -40px;
+	margin-right: 10px;
+}
+.search{
+	padding: 19px 20px 19px 30px;
+	transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+}
+.search ion-icon{
+	font-size: 23px;
+    line-height: 40px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+.search:hover, .search:active{
+	color: #FFF;
+	background: #FB0179;
+}
+.search span{
+	display: none;
+}
+    
+.login{
+	border: none;
+    background-image: linear-gradient(43.06deg, #FB0179 13.86%, #6441A5 51.04%, #1FB3E0 85.38%);
+    padding: 1px;
+}
+.login:hover, .login:active{
+	padding: 1px;
+	background: #FB0179;
+	transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+}
+.login span{
+	display: block;
+	background: #FFF;
+	border-radius: 2px;
+	padding: 10px 30px;
+	transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+}
+
+.login span:hover,.login span:active{
+    background:#FB0179;
+	color: #FFF;
+}
+
+/* CSS Product line  */
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-top: 16px;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 380px;
+}
+.swiper-slide:hover .im-dsp-overlay{
+	bottom: 0;
+	opacity: 1;
+}
+.swiper-slide:hover .des-dsp{
+	opacity: 0;
+}
+.im-dsp{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	display: block;
+}
+.im-dsp-overlay {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+	background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+	z-index: 1;
+	transition: .3s ease-in-out;
+}
+.im-dsp-btn{
+	background:#FFF;
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	padding: 10px 60px;
+	position: relative;
+	top: 48%;
+	transition: .3s ease-in-out;
+}
+.im-dsp-btn:hover, .im-dsp-btn:active{
+	color: #FFF;
+	background: #FB0179;
+}
+.des-dsp{
+	position: absolute;
+	width: 100%;
+	padding: 16px 16px 24px 16px;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.45);
+	bottom: 0;
+	text-align: justify;
+	color: #FFF;
+	transition: .3s ease-in-out;
+	text-shadow: 1px 2px 2px #222;
+
+}
+.des-dsp h3{
+	font-family: 'Roboto-Bold';
+	font-size: 16px;
+}
+.des-dsp p{
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	margin-bottom: 0;
+	word-break: break-word;
+}
+
+/* CSS Tag  */
+.tag h2{
+	text-transform: uppercase;
+	font-family: 'Roboto-Bold';
+	font-size:16px;
+	color: #000;
+}
+.badge-info{
+	display: inline-block;
+	background: #6441A5;
+	border-radius: 3px; 
+	font-family: 'Roboto-Regular';
+	font-weight: normal;
+	font-size: 10px;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FEFEFE;
+    position: relative;
+    top: -3px;
+    margin-bottom: 8px;
+}
+.badge-info:hover, .badge-info:active{
+	background: #FB0179;
+}
+@media (min-width: 360px) {
+		.swiper-slide {
+		height: 490px;
+	}
+}
+@media (min-width: 450px) {
+	.swiper-slide {
+		height: 595px;
+	}
+	.search{
+		padding: 10px 30px 10px 40px;
+		transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+	}
+	.search span{
+		display: block;
+	}
+}
+@media (min-width: 576px) {
+	nav > .container {
+		position: relative;
+	}
+	.store-list {
+    	top: 0;
+    	left:0;
+	}
+	.nav-btn {
+		top: 12px;
+	}
+	.swiper-slide {
+		height: 490px;
+	}
+}
+
+@media screen and (min-device-width: 640px) and (max-device-width: 767.98px) { 
+	main > .container {
+	  	padding: 96px 0px 0;
+	}
+	nav > .container {
+		position: relative;
+	}
+	.store-list {
+    	top: 0;
+    	left:0;
+	}
+	.nav-btn {
+		position:absolute;
+		right: 0;
+    	top: 0;
+	}
+	.swiper-slide {
+		height: 380px;
+	}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 991.98px) { 
+	main > .container {
+	  	padding: 96px 15px 0;
+	}
+	nav > .container {
+		position: relative;
+	}
+	.store-list {
+    	top: 45px;
+    	left:-118px;
+	}
+	.nav-btn {
+		position:absolute;
+		right: 15px;
+		top: 12px;
+	}
+	.swiper-slide {
+		height: 440px;
+	}
+}
+@media (min-width: 992px) {
+	main > .container {
+	  	padding: 56px 15px 0;
+	}
+  	.store-list{
+    	margin-top: 0px;
+    	margin-left: auto;
+    	margin-right: 262px;
+	}
+	.nav-btn{main
+		margin-top: -12px;
+	}
+	.swiper-slide {
+		height: 380px;
+	}
+}
+@media (min-width: 1200px) {
+  	.store-list{
+	  	right: 3px;
+	}
+	.swiper-slide {
+		height: 490px;
+	}
+}
