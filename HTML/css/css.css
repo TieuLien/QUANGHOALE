@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face{
+	font-family: 'SVN-Cookie';
+	src: url('../fonts/SVN-Cookie.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
 	font-family: 'Roboto-Regular';
 	src: url('../fonts/Roboto-Regular.ttf');
 	font-weight: normal;
@@ -19,18 +25,19 @@
 	font-style: normal;
 }
 body{
-	background: #FAFAFA;
+	background: #F9F9F9;
 	margin: 0 auto;
 	font-family: 'Roboto-Regular';
 	font-size: 14px;
 	line-height: 150%;
 }
+
 .m-t-b-24{
 	margin-top: 24px;
 	margin-bottom: 24px;
 }
-.m-r-24{
-	margin-right: 24px;
+.m-r-8{
+	margin-right: 8px;
 }
 .pink{
 	color: #FB0179;
@@ -46,35 +53,102 @@ body{
 	font-size: 12px;
 	text-transform: uppercase;
 }
+.text-link:hover, .text-link:active{
+	color: #6441A5;
+	text-decoration: none;
+}
 
 /* CSS Header */
+.navbar{
+	justify-content: normal;
+	height: 56px;
+    background: #FFF;
+	box-shadow: 0px 0px 8px rgba(60, 60, 67, 0.16);
+	padding: 10px 15px;
+}
 .navbar-vn{
 	height: 56px;
 	background: #FFFFFF;
 	box-shadow: 0px 0.33px 0px rgba(60, 60, 67, 0.3);
 }
-.logo{
-	width: 102px;
-	height: auto;
+.navbar-brand{
+	margin-right: 0;
+	margin-left: 1rem;
+	font-family:'SVN-Cookie';
+	font-size: 40px;
+	font-weight: normal;
+	background-image: linear-gradient(66.9deg, #FB0179 16.18%, #6441A5 54.9%, #1FB3E0 95.26%);
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
-.store-list{
-	background: #FFFFFF;
-	border: 0.5px solid rgba(60, 60, 67, 0.3);
-	box-sizing: border-box;
-	border-radius: 3px;
-	height: 40px;
-    position: relative;
-	margin-top: 24px;
+.navbar-brand:hover{
+	background-image: linear-gradient(66.9deg, #FB0179 16.18%, #6441A5 54.9%, #1FB3E0 95.26%);
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.navbar-toggler {
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    background: #FFF;
+    display: inline-block;
+    border-radius: 3px;
+	color: #8F5DB7;
+	line-height:inherit;
+	transition: .3s ease-in-out;
 }
 .nav-btn {
-	position:absolute;
-	right: 15px;
-	top: 8px;
+	position: absolute;
+    right: 16px;
+    font-size: 24px;
+}
+.nav-btn a{
+	display: inline-block;
+	color: #000;
+	background: #FFF;
+    padding: 4px;
+    border-radius: 3px;
+	transition: .3s ease-in-out;
+}
+.nav-btn a:hover, .nav-btn a:active, .navbar-toggler:hover, .navbar-toggler:active{
+	color: #FFF;
+	background: #6441A5;
+}
+.store-list{
+	background: #FAFAFA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    position: absolute;
+    right: 130px;
+}
+@media (max-width: 767px) {
+  	.store-list{
+		position: absolute;
+   		right: 0;
+    	height: auto;
+    	padding: 16px;
+    	top: 56px;
+    	border-radius: 0;
+	}
 }
 .store-list ul{
     height: 40px;
     line-height: 40px;
-	overflow: hidden;
+	width: calc(100% - 70px);
+}
+@media (max-width: 767px) {
+  	.store-list ul{
+		height: auto;
+    	line-height: 150%;
+    	display: inline-block;
+    	width: 100%;
+	}
 }
 .store-list ul li{
 	display: inline-block;
@@ -84,59 +158,38 @@ body{
     white-space: nowrap; 
     text-overflow: ellipsis;
 	color: #262626;
+}  
+@media (max-width: 767px) {
+  	.store-list ul li{
+		width: auto;
+	}
+} 
+@media (max-width: 767px){
+	.sm-none {
+    	display: none !important;
+	}
+	.slide{
+		padding: 0;
+	}
 }
-.readmore-tx{
-	line-height: 40px;
-	margin-top: -40px;
-	margin-right: 10px;
-}
-.search{
-	padding: 19px 20px 19px 30px;
-	transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
-}
-.search ion-icon{
-	font-size: 23px;
-    line-height: 40px;
-    position: absolute;
-    left: 15px;
-    top: 8px;
-}
-.search:hover, .search:active{
-	color: #FFF;
-	background: #FB0179;
-}
-.search span{
-	display: none;
-}
-    
-.login{
-	border: none;
-    background-image: linear-gradient(43.06deg, #FB0179 13.86%, #6441A5 51.04%, #1FB3E0 85.38%);
-    padding: 1px;
-}
-.login:hover, .login:active{
-	padding: 1px;
-	background: #FB0179;
-	transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
-}
-.login span{
-	display: block;
-	background: #FFF;
-	border-radius: 2px;
-	padding: 10px 30px;
-	transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
-}
-
-.login span:hover,.login span:active{
-    background:#FB0179;
-	color: #FFF;
-}
-
 /* CSS Product line  */
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: 0;
+}
+.bt-w{
+	color: #FFF;
+	filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+}
 .swiper-container {
 	width: 100%;
 	height: 100%;
-	margin-top: 16px;
+	margin-top: 72px;
+}
+@media (max-width: 767px){
+	.swiper-container {
+		margin-top: 56px;
+		position: relative;
+	}
 }
 .swiper-slide {
 	text-align: center;
@@ -156,7 +209,27 @@ body{
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
-	height: 380px;
+	height: 400px;
+}
+@media (max-width: 414px){
+	.swiper-slide {
+		height: 550px;
+	}
+}
+@media (max-width: 375px){
+	.swiper-slide {
+		height: 500px;
+	}
+}
+@media (max-width: 360px){
+	.swiper-slide {
+		height: 480px;
+	}
+}
+@media (max-width: 320px){
+	.swiper-slide {
+		height: 420px;
+	}
 }
 .swiper-slide:hover .im-dsp-overlay{
 	bottom: 0;
@@ -186,29 +259,40 @@ body{
 	transition: .3s ease-in-out;
 }
 .im-dsp-btn{
-	background:#FFF;
-	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
-	padding: 10px 60px;
+	padding: 8px 24px;
 	position: relative;
 	top: 48%;
 	transition: .3s ease-in-out;
+	border: none;
+	color: #FFF
+}
+.im-dsp-btn ion-icon{
+	font-size: 32px;
+	margin-right: 4px;
+	filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+.im-dsp-btn span{
+	font-size: 18px;
+	position: relative;
+    top: -6px;
+	text-shadow: 1px 1px 1px #222;
 }
 .im-dsp-btn:hover, .im-dsp-btn:active{
 	color: #FFF;
-	background: #FB0179;
+	background: #B9A3E3;
 }
 .des-dsp{
 	position: absolute;
 	width: 100%;
 	padding: 16px 16px 24px 16px;
 	box-sizing: border-box;
-	background: rgba(0, 0, 0, 0.45);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 	bottom: 0;
 	text-align: justify;
 	color: #FFF;
 	transition: .3s ease-in-out;
-	text-shadow: 1px 2px 2px #222;
+	text-shadow: 1px 1px 1px #222;
 
 }
 .des-dsp h3{
@@ -224,8 +308,7 @@ body{
 
 /* CSS Tag  */
 .tag h2{
-	text-transform: uppercase;
-	font-family: 'Roboto-Bold';
+	font-family: 'Roboto-Medium';
 	font-size:16px;
 	color: #000;
 }
@@ -245,102 +328,5 @@ body{
     margin-bottom: 8px;
 }
 .badge-info:hover, .badge-info:active{
-	background: #FB0179;
-}
-@media (min-width: 360px) {
-		.swiper-slide {
-		height: 490px;
-	}
-}
-@media (min-width: 450px) {
-	.swiper-slide {
-		height: 595px;
-	}
-	.search{
-		padding: 10px 30px 10px 40px;
-		transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
-	}
-	.search span{
-		display: block;
-	}
-}
-@media (min-width: 576px) {
-	nav > .container {
-		position: relative;
-	}
-	.store-list {
-    	top: 0;
-    	left:0;
-	}
-	.nav-btn {
-		top: 12px;
-	}
-	.swiper-slide {
-		height: 490px;
-	}
-}
-
-@media screen and (min-device-width: 640px) and (max-device-width: 767.98px) { 
-	main > .container {
-	  	padding: 96px 0px 0;
-	}
-	nav > .container {
-		position: relative;
-	}
-	.store-list {
-    	top: 0;
-    	left:0;
-	}
-	.nav-btn {
-		position:absolute;
-		right: 0;
-    	top: 0;
-	}
-	.swiper-slide {
-		height: 380px;
-	}
-}
-@media screen and (min-device-width: 768px) and (max-device-width: 991.98px) { 
-	main > .container {
-	  	padding: 96px 15px 0;
-	}
-	nav > .container {
-		position: relative;
-	}
-	.store-list {
-    	top: 45px;
-    	left:-118px;
-	}
-	.nav-btn {
-		position:absolute;
-		right: 15px;
-		top: 12px;
-	}
-	.swiper-slide {
-		height: 440px;
-	}
-}
-@media (min-width: 992px) {
-	main > .container {
-	  	padding: 56px 15px 0;
-	}
-  	.store-list{
-    	margin-top: 0px;
-    	margin-left: auto;
-    	margin-right: 262px;
-	}
-	.nav-btn{main
-		margin-top: -12px;
-	}
-	.swiper-slide {
-		height: 380px;
-	}
-}
-@media (min-width: 1200px) {
-  	.store-list{
-	  	right: 3px;
-	}
-	.swiper-slide {
-		height: 490px;
-	}
+	background: #B9A3E3;
 }
