@@ -219,7 +219,7 @@ body{
 	-webkit-align-items: center;
 	align-items: center;
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1023px) { 
+@media screen and (min-device-width: 768px) and (max-device-width: 811px) { 
 	.swiper-container {
 		height: 880px;
 	}
@@ -228,6 +228,11 @@ body{
 	}
 	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
 		bottom:10px;
+	}
+}
+@media (width: 812px){
+	.swiper-container {
+		height: 500px;
 	}
 }
 @media screen and (min-device-width: 1024px) and (max-device-width: 1365px) { 
