@@ -230,15 +230,6 @@ body{
 		bottom:10px;
 	}
 }
-/* 1792x828px at 326ppi */
-@media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) { 
-		.swiper-container {
-			height: 500px;
-	}
-}
 @media screen and (min-device-width: 1024px) and (max-device-width: 1365px) { 
 	.swiper-container {
 		height: 650px;
@@ -281,6 +272,15 @@ body{
 	}
 	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
 		bottom:10px;
+	}
+}
+/* 1792x828px at 326ppi */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) { 
+		.swiper-container {
+			height: 500px;
 	}
 }
 @media (max-width: 540px){
