@@ -219,7 +219,7 @@ body{
 	-webkit-align-items: center;
 	align-items: center;
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1023px) { 
+@media only screen and (device-width: 768px) and (device-height: 1024px) { 
 	.swiper-container {
 		height: 880px;
 	}
@@ -280,8 +280,11 @@ body{
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 2) { 
 		.swiper-container {
-			height: 500px;
-	}
+    		height: 380px;
+		}
+		.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    		bottom: 10px;
+		}
 }
 @media (max-width: 540px){
 	.swiper-container {
