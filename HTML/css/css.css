@@ -231,7 +231,6 @@ body{
 		height: 550px;
 	}
 }
- 
 /* Landscape */
 @media only screen
  and (min-device-width: 375px)
@@ -242,7 +241,39 @@ body{
 		height: 340px;
 	}
 }
-
+/* ----------- Tablet ----------- */
+/* Portrait */
+@media only screen
+ and (min-device-width: 768px)
+ and (max-device-width: 1024px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (orientation: portrait) {
+ 	.swiper-container {
+		height: 880px;
+	}
+    .swiper-slide {
+		height: calc((100% - 30px) / 2);
+	}
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+		bottom:10px;
+	}
+}
+/* Landscape */
+@media only screen
+ and (min-device-width: 768px)
+ and (max-device-width: 1024px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (orientation: landscape) {
+ 	.swiper-container {
+		height: 590px;
+	}
+    .swiper-slide {
+		height: calc((100% - 30px) / 2);
+	}
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+		bottom:10px;
+	}
+}
 
 .swiper-slide:hover .im-dsp-overlay{
 	bottom: 0;
