@@ -9,12 +9,10 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-  	slidesPerView: 1,
-  	spaceBetween: 10,
   	// init: false,
   breakpoints: {
 	480: {
-	  slidesPerView: 2,
+	  slidesPerView: 1,
 	  spaceBetween: 20,
 	},
 	640: {
@@ -26,8 +24,8 @@ var swiper = new Swiper('.swiper-container', {
 	  slidesPerColumn: 2,
 	  spaceBetween: 20,
 	},
-	812: {
-	  slidesPerView: 3,
+	896: {
+	  slidesPerView: 5,
 	  slidesPerColumn: 1,
 	  spaceBetween: 20,
 	},
