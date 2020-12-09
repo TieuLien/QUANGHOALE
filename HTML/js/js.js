@@ -20,15 +20,18 @@ var swiper = new Swiper('.swiper-container', {
 	  spaceBetween: 20,
 	},
 	768: {
-	  slidesPerView: 5,
+	  slidesPerView: 2,
+	  slidesPerColumn: 2,
 	  spaceBetween: 20,
 	},
 	896: {
-	  slidesPerView: 5,
+	  slidesPerView: 3,
+	  slidesPerColumn: 1,
 	  spaceBetween: 20,
 	},
 	1024: {
 	  slidesPerView: 4,
+	  slidesPerColumn: 2,
 	  spaceBetween: 20,
 	},
 	1366: {
@@ -37,14 +40,17 @@ var swiper = new Swiper('.swiper-container', {
 	},
 	1440: {
 	  slidesPerView: 4,
+	  slidesPerColumn: 2,
 	  spaceBetween: 30,
 	},
 	1504: {
 	  slidesPerView: 3,
+ 	  slidesPerColumn: 3,
 	  spaceBetween: 30,
 	},
 	2256: {
 	  slidesPerView: 4,
+ 	  slidesPerColumn: 2,
 	  spaceBetween: 30,
 	},
 	  
