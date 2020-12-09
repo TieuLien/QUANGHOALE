@@ -19,6 +19,7 @@ var swiper = new Swiper('.swiper-container', {
 	},
 	640: {
 	  slidesPerView: 3,
+	  slidesPerColumn: 1,
 	  spaceBetween: 20,
 	},
 	768: {
