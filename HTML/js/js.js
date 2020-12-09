@@ -13,8 +13,12 @@ var swiper = new Swiper('.swiper-container', {
   	spaceBetween: 10,
   	// init: false,
   breakpoints: {
-	640: {
+	480: {
 	  slidesPerView: 2,
+	  spaceBetween: 20,
+	},
+	640: {
+	  slidesPerView: 3,
 	  spaceBetween: 20,
 	},
 	768: {
