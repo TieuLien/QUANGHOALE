@@ -31,7 +31,11 @@ body{
 	font-size: 14px;
 	line-height: 150%;
 }
-
+.bg-page{
+	background:url(../images/Group338.jpg) no-repeat right 50px;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
 .m-t-b-24{
 	margin-top: 24px;
 	margin-bottom: 24px;
@@ -45,6 +49,12 @@ body{
 .black{
 	color: #262626;
 }
+.color-google{
+	color: #EA4335 !important;
+}
+.color-facebook{
+	color: #1877F2 !important;
+}
 .btn{
 	font-family: 'Roboto-Medium';
 	border: 1px solid rgba(60, 60, 67, 0.3);
@@ -52,6 +62,17 @@ body{
 	padding: 10px 30px;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+.btn-purple{
+	background: #6441A5;
+	filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.3));
+	color: #FFF;
+	transition: .3s ease-in-out;
+}
+.btn-purple:hover, .btn-purple:active{
+	background: #B9A3E3;
+	color: #FFF;
+	border-color: #B9A3E3;
 }
 .text-link-icon{
 	color: #8F5DB7;
@@ -158,17 +179,14 @@ body{
 	display: inline-block;
 	margin-right: 10px;
 	overflow: hidden;
-	width: 60px;
+	width: calc((100% - 83px) / 10);
     white-space: nowrap; 
     text-overflow: ellipsis;
 	color: #262626;
 }  
 @media (max-width: 767px) {
   	.store-list ul li{
-		width: auto;
-	}
-	.text-link-icon{
-		display: none;
+		width: 30%;
 	}
 } 
 @media (max-width: 568px){
@@ -374,4 +392,40 @@ body{
 }
 .badge-info:hover, .badge-info:active{
 	background: #B9A3E3;
+}
+
+/* Modal */
+.modaldsp.swiper-container{
+	margin-top: 0;
+}
+.modal-dsp{
+	width: 100%;
+	height: 550px;
+}
+@media (min-width: 576px){
+	.modal-dialog {
+		max-width: 700px;
+		margin: 1.75rem auto;
+	}
+	.modal-dsp{
+		height: 400px;
+	}
+}
+
+/* Box info */
+.box-margin{
+	margin-top: 140px;
+}
+.box-info{
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8px rgba(60, 60, 67, 0.16);
+	border-radius: 15px;
+	padding: 40px 50px;
+}
+.box-info-title{
+	font-family:'SVN-Cookie';
+	font-size: 40px;
+	font-weight: normal;
+	color: #B9A3E3;
+	text-align: center;
 }

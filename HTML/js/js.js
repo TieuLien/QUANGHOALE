@@ -56,4 +56,32 @@ var swiper = new Swiper('.swiper-container', {
 	  
   }
 });
+var swiper = new Swiper('.modaldsp.swiper-container', {
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+      },
+	navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+	slidesPerView: 1,
+	slidesPerColumn: 1,
+  	// init: false,
+  breakpoints: {
+	640: {
+	  slidesPerView: 2,
+	  slidesPerColumn: 1,
+	  spaceBetween: 20,
+	}, 
+  }
 });
+});
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
