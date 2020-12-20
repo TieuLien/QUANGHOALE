@@ -6,15 +6,23 @@
 	<meta name="description" content="Curabitur, Product">
 	<meta name="author" content="Le Quang Hoa, Tieu Lien, and Bootstrap contributors">
 	<meta name="generator" content="Le Quang Hoa">
-	<title>User Information</title>
+	<title>Curabitur - Login for add your product</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/sticky-footer-navbar.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/css.css">
+	
+	<style>
+		html,
+		body {
+		  position: relative;
+		  height: 100%;
+		}
+  	</style>
 </head>
 	
-<body class="d-flex flex-column h-100 bg-page">
+<body class="d-flex flex-column h-100">
 	<header>
 		<!-- Fixed navbar -->
 		<nav class="navbar navbar-expand-md fixed-top">
@@ -22,9 +30,9 @@
 			</a>
 			<a class="navbar-brand" href="#">Curabitur</a>
 			<div class="nav-btn">
-				<a class="sm-none" href="#" data-toggle="tooltip" data-placement="bottom" title="Trang chủ"><ion-icon name="home-outline"></ion-icon></a>
+				<a class="sm-none" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Trang chủ"><ion-icon name="home-outline"></ion-icon></a>
 				<a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Tìm kiếm"><ion-icon name="search-outline"></ion-icon></a>
-				<a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="Thêm sản phẩm"><ion-icon name="create-outline"></ion-icon></a>
+				<a class="" href="page6.html" data-toggle="tooltip" data-placement="bottom" title="Thêm sản phẩm"><ion-icon name="create-outline"></ion-icon></a>
 			</div>
 
 			<div class="collapse navbar-collapse store-list col-md-7 col-lg-8" id="navbarCollapse">
@@ -47,66 +55,103 @@
 
 	<!-- Begin page content -->
 	<main role="main" class="flex-shrink-0">
-		<div class="container-fluid">
-			<div class="row justify-content-center box-margin">
-			<div class="col-12 col-sm-6 box-info">
-				<h2 class="box-info-title text-center">Thông tin cá nhân</h2>
-				<div class="row m-t-b-24">
-					<div class="col-3">Độ tuổi</div>
-					<div class="col-8">
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="DoTuoi" id="flexRadioDefault1">
-						  <label class="form-check-label" for="flexRadioDefault1">
-							Dưới 18
-						  </label>
-						</div>
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="DoTuoi" id="flexRadioDefault2" checked>
-						  <label class="form-check-label" for="flexRadioDefault2">
-							Từ 18-22
-						  </label>
-						</div>
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="DoTuoi" id="flexRadioDefault3">
-						  <label class="form-check-label" for="flexRadioDefault3">
-							Từ 23 tới 35
-						  </label>
-						</div>
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="DoTuoi" id="flexRadioDefault4">
-						  <label class="form-check-label" for="flexRadioDefault4">
-							Từ 36 tới 45
-						  </label>
-						</div>
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="DoTuoi" id="flexRadioDefault5">
-						  <label class="form-check-label" for="flexRadioDefault5">
-							Trên 45
-						  </label>
-						</div>
-					</div>
+		<div class="container-fluid m-t-72">
+			<div class="row insert_sp">
+				<div class="col-12 col-sm-6 col-lg-2 m-t-16">
+				  <label for="dsp1" class="form-label">Dòng sản phẩm</label>
+				  <input type="text" class="form-control" id="dsp1" placeholder="Nhập dòng sản phẩm" value="Integer nec diam sed">
 				</div>
-				<div class="row">
-				  	<div class="col-3">Giới tính</div>
-					<div class="col-9">
-						<div class="form-check form-check-inline">
-						  <input class="form-check-input" type="radio" name="GioiTinh" id="flexRadioDefault6">
-						  <label class="form-check-label" for="flexRadioDefault6">
-							Nam
-						  </label>
-						</div>
-						<div class="form-check form-check-inline">
-						  <input class="form-check-input" type="radio" name="GioiTinh" id="flexRadioDefault7">
-						  <label class="form-check-label" for="flexRadioDefault7">
-							Nữ
-						  </label>
-						</div>
-					</div>
-					
+				<div class="col-12 col-sm-6 col-lg-4 m-t-16">
+				  <label for="dsp2" class="form-label">Mô tả</label>
+				  <input type="text" class="form-control" id="dsp2" placeholder="Nhập mô tả" value="Duis dignissim ex ut magna tincidunt, et imperdiet...">
 				</div>
-				<a class="btn btn-block btn-purple m-t-b-24" href="#">button</a>
+				<div class="col-12 col-sm-6 col-lg-2 m-t-16">
+					<label for="dsp3" class="form-label">Thể loại</label>
+				  	<select class="form-control form-select" aria-label="Thể loại">
+					  <option selected>Ex ut magna, tincidunt</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+					</select>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-2 m-t-16">
+					<label for="formFile" class="form-label">Ảnh đại diện</label>
+  					<input class="form-control p-r-30" type="file" id="formFile" placeholder="Chọn ảnh đại diện" value="Chưa có ảnh..."><span class="upload-icon"><ion-icon name="camera-outline"></ion-icon></span>
+				</div>
+				<div class="col-12 col-sm-12 col-lg-2">
+					<a class="btn btn-block btn-add m-btn-add" href="#">Thêm</a>
+				</div>
 			</div>
+			
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class="list-dsp">
+						<img class="im-dsp" src="images/image 78.png" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="im-sp-btn" data-toggle="modal" data-target="#addsp"><ion-icon name="pencil-outline"></ion-icon></a>
+							<a class="im-sp-btn" href="#"><ion-icon name="trash-outline"></ion-icon></a>
+						</div>
+					</div>
 				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 78.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 79.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 80.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 84.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 83.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 
@@ -117,18 +162,21 @@
 </footer>
 	
 <!-- Modal -->
-	<div class="modal fade" id="dsp1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="addsp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Integer nec diam sed</h4>
+					<h4 class="modal-title">Thông tin sản phẩm</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-		  	<div class="modal-body">
-		  		<iframe src="page2.html" class="modal-dsp" frameborder="0" allowfullscreen></iframe>
+		  	<div class="modal-body add-sp">
+		  		<input type="text" class="form-control form-sp" id="sp1" placeholder="Nhập tên sản phẩm..." value="Integer nec diam sed">
+				<img class="im-add-sp" src="images/image 79.jpg" alt=""/>
 		  	</div>
+			<div class="col-12"><a class="btn btn-block btn-add p-m-btn-add" href="#">Thêm</a></div>
+			
 		</div>
 	  </div>
 	</div>

@@ -22,7 +22,7 @@
   	</style>
 </head>
 	
-<body class="d-flex flex-column h-100 bg-page">
+<body class="d-flex flex-column h-100">
 	<header>
 		<!-- Fixed navbar -->
 		<nav class="navbar navbar-expand-md fixed-top">
@@ -48,114 +48,115 @@
 					<li><a class="black text-link" href="#" data-toggle="tooltip" data-placement="bottom" title="xiaomi_sto"><span class="text-link-icon color-facebook"><ion-icon name="logo-facebook"></ion-icon></span> xiaomi_sto</a></li>
 					<li><a class="black text-link" href="#" data-toggle="tooltip" data-placement="bottom" title="apple_stor"><span class="text-link-icon color-google"><ion-icon name="logo-google"></ion-icon></span> apple_stor</a></li>
 				</ul>
-				<a class="float-right pink text-link" href="page3.html"><span class="text-link-icon"><ion-icon name="ellipsis-horizontal"></ion-icon></span> Xem thêm</a>
+				<a class="float-right pink text-link" href="#"><span class="text-link-icon"><ion-icon name="ellipsis-horizontal"></ion-icon></span> Xem thêm</a>
 		  </div>
 		</nav>
 	</header>
 
 	<!-- Begin page content -->
 	<main role="main" class="flex-shrink-0">
-		<div class="container-fluid slide">
-			<!-- Swiper -->
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 72.png" alt=""/>
+		<div class="container-fluid m-t-72">
+			<div class="row insert_sp">
+				<div class="col-12 col-sm-6 col-lg-3 m-t-16">
+				  <label for="dsp1" class="form-label">Dòng sản phẩm</label>
+				  <input type="text" class="form-control" id="dsp1" placeholder="Nhập dòng sản phẩm" value="">
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3 m-t-16">
+				  <label for="dsp2" class="form-label">Mô tả</label>
+				  <input type="text" class="form-control" id="dsp2" placeholder="Nhập mô tả" value="">
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3 m-t-16">
+					<label for="dsp3" class="form-label">Thể loại</label>
+				  	<select class="form-control form-select" aria-label="Thể loại">
+					  <option selected>Chọn một hoặc nhiều thể loại</option>
+					  <option value="1">One</option>
+					  <option value="2">Two</option>
+					  <option value="3">Three</option>
+					</select>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<a class="btn btn-block btn-add m-btn-add2" href="#">Thêm</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class="list-dsp">
+						<img class="im-dsp" src="images/image 78.png" alt=""/>
 						<div class="des-dsp">
 							<h3>Integer nec diam sed </h3>
-							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
+							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="im-sp-btn" href="#"><ion-icon name="share-social-outline"></ion-icon></a>
+							<a class="im-sp-btn" href="page10.html" ><ion-icon name="pencil-outline"></ion-icon></a>
+							<a class="im-sp-btn" href="#"><ion-icon name="trash-outline"></ion-icon></a>
+							<div class="col-12 t-30"><a class="btn im-dsp-btn" data-toggle="modal" data-target="#addsp"><ion-icon name="camera"></ion-icon><span>16</span></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 78.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
 						</div>
 						<div class="im-dsp-overlay">
 							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
 						</div>
 					</div>
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 73.png" alt=""/> 
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 79.jpg" alt=""/>
 						<div class="des-dsp">
 							<h3>Integer nec diam sed </h3>
 							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
 						</div>
 						<div class="im-dsp-overlay">
-							<a href="#" class="btn im-dsp-btn"><ion-icon name="camera"></ion-icon><span>16</span></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 74.png" alt=""/> 
-						<div class="des-dsp">
-							<h3>Integer nec diam sed </h3>
-							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
-						</div>
-						<div class="im-dsp-overlay">
-							<a href="#" class="btn im-dsp-btn"><ion-icon name="camera"></ion-icon><span>16</span></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 78.png" alt=""/> 
-						<div class="des-dsp">
-							<h3>Integer nec diam sed </h3>
-							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
-						</div>
-						<div class="im-dsp-overlay">
-							<a href="#" class="btn im-dsp-btn"><ion-icon name="camera"></ion-icon><span>16</span></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 73.png" alt=""/> 
-						<div class="des-dsp">
-							<h3>Integer nec diam sed </h3>
-							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
-						</div>
-						<div class="im-dsp-overlay">
-							<a href="#" class="btn im-dsp-btn"><ion-icon name="camera"></ion-icon><span>16</span></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 72.png" alt=""/> 
-						<div class="des-dsp">
-							<h3>Integer nec diam sed </h3>
-							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
-						</div>
-						<div class="im-dsp-overlay">
-							<a href="#" class="btn im-dsp-btn"><ion-icon name="camera"></ion-icon><span>16</span></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img class="im-dsp" src="images/image 74.png" alt=""/> 
-						<div class="des-dsp">
-							<h3>Integer nec diam sed </h3>
-							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
-						</div>
-						<div class="im-dsp-overlay">
-							<a href="#" class="btn im-dsp-btn"><ion-icon name="camera"></ion-icon><span>16</span></a>
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
 						</div>
 					</div>
 				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next bt-w"></div>
-				<div class="swiper-button-prev bt-w"></div>
-			  </div>
-		</div>
-		
-		<div class="container-fluid">
-			<!-- Tag -->
-			<div class="tag m-t-b-24">
-				<h2>
-					<span class="m-r-8">Thể loại:</span>
-					<a href="#"><span class="badge badge-info">Aliquam pretium</span></a>
-					<a href="#"><span class="badge badge-info">Fusce eleifend augue</span></a>
-					<a href="#"><span class="badge badge-info">Donec at nibh</span></a>
-					<a href="#"><span class="badge badge-info">Suspendisse ac</span></a>
-					<a href="#"><span class="badge badge-info">Sed tincidunt quam</span></a>
-					<a href="#"><span class="badge badge-info">Aliquam pretium</span></a>
-					<a href="#"><span class="badge badge-info">Fusce eleifend augue</span></a>
-					<a href="#"><span class="badge badge-info">Donec at nibh</span></a>
-					<a href="#"><span class="badge badge-info">Suspendisse ac</span></a>
-					<a href="#"><span class="badge badge-info">Sed tincidunt quam</span></a>
-				</h2>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 80.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 84.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3">
+					<div class=" list-dsp">
+						<img class="im-dsp" src="images/image 83.jpg" alt=""/>
+						<div class="des-dsp">
+							<h3>Integer nec diam sed </h3>
+							<p>Duis dignissim ex ut magna tincidunt, et imperdiet nissim ex ut magna tincidun</p>
+						</div>
+						<div class="im-dsp-overlay">
+							<a class="btn im-dsp-btn" data-toggle="modal" data-target="#dsp1"><ion-icon name="camera"></ion-icon><span>16</span></a>
+						</div>
+					</div>
+				</div>
 			</div>
-	  </div>
+		</div>
 	</main>
 
 <footer class="footer mt-auto py-3">
@@ -165,18 +166,21 @@
 </footer>
 	
 <!-- Modal -->
-	<div class="modal fade" id="dsp1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="addsp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Integer nec diam sed</h4>
+					<h4 class="modal-title">Thông tin sản phẩm</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-		  	<div class="modal-body">
-		  		<iframe src="page2.html" class="modal-dsp" frameborder="0" allowfullscreen></iframe>
+		  	<div class="modal-body add-sp">
+		  		<input type="text" class="form-control form-sp" id="sp1" placeholder="Nhập tên sản phẩm..." value="">
+				<img class="im-add-sp" src="images/image 79.jpg" alt=""/>
 		  	</div>
+			<div class="col-12"><a class="btn btn-block btn-add p-m-btn-add" href="#">Thêm</a></div>
+			
 		</div>
 	  </div>
 	</div>
